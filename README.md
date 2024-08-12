@@ -12,7 +12,8 @@
   ## Installation
   Clone the repository from github.  Install the dependent packages using:  npm install
   ## Usage
-  Run the application using:  node index.js<br>
+  Run the application using:  npm start<br>
+  Link to video walkthrough of using the application:  https://drive.google.com/file/d/1Dgw0xAePceRB_mi7Kf1E_ME_r7G9vFpU/view?usp=drive_link
   ## Contributing
   Fork the project.  Create a feature branch.  Commit your changes.  Push the branch.  Open a pull request.
   ## Tests
