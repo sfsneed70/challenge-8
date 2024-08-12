@@ -10,7 +10,7 @@
   - [License](#license)
   - [Questions](#questions)
   ## Installation
-  Clone the repository from github.  Install the dependent packages using:  node install
+  Clone the repository from github.  Install the dependent packages using:  npm install
   ## Usage
   Run the application using:  node index.js<br>
   ## Contributing
