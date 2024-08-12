@@ -1,7 +1,7 @@
-# Readme Generator
+# Vehicle Builder
   ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
   ## Description
-  This application allows the user to quickly create a professional README for a new project.
+  Allows the user to either create a new vehicle or select an existing vehicle. After going through the creation or selection process, the user is able to perform certain actions with the selected vehicle. The user is returned to the actions menu after each action until they decide to exit the application.
   ## Table of Contents
   - [Installation](#installation)
   - [Usage](#usage)
@@ -13,11 +13,10 @@
   Clone the repository from github.  Install the dependent packages using:  node install
   ## Usage
   Run the application using:  node index.js<br>
-  Here is a link to a video walkthrough of using the application:  https://drive.google.com/file/d/1Bv4_5PjYWZVpzM08bsoRgZk4_4qgqmrW/view
   ## Contributing
   Fork the project.  Create a feature branch.  Commit your changes.  Push the branch.  Open a pull request.
   ## Tests
-  Run the application answering all the questions.  When finished verify that the README was created successfully in the output folder.
+  Run the application testing the various options.  Add a truck, add a car, and add a motorbike.  Test that a truck can tow and a motorbike can wheelie.  Print details for the various vehicle types.
   ## License
     This project is licensed under the MIT license.
   ## Questions
