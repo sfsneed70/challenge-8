@@ -61,7 +61,7 @@ class Cli {
           name: "vehicleType",
           message: "Select a vehicle type",
           // TODO: Update the choices array to include Truck and Motorbike
-          choices: ["Car"],
+          choices: ["Car", "Truck", "Motorbike"],
         },
       ])
       .then((answers) => {
@@ -70,6 +70,11 @@ class Cli {
           this.createCar();
         }
         // TODO: add statements to create a truck or motorbike if the user selects the respective vehicle type
+        else if (answers.vehicleType === "Truck") {
+          this.createTruck();
+        } else if (answers.vehicleType === "Motorbike") {
+          this.createMotorbike();
+        }
       });
   }
 

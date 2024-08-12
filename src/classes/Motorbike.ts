@@ -64,7 +64,7 @@ class Motorbike extends Vehicle {
     console.log("Wheels:");
     this.wheels.forEach((wheel, index) => {
       console.log(
-        `Wheel ${index}: ${wheel.getDiameter} inch with a ${wheel.getTireBrand} tire`
+        `Wheel ${index+1}: ${wheel.getDiameter} inch with a ${wheel.getTireBrand} tire`
       );
     });
   }
