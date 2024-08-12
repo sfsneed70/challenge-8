@@ -401,27 +401,26 @@ class Cli {
           for (let i = 0; i < this.vehicles.length; i++) {
             if (this.vehicles[i].vin === this.selectedVehicleVin) {
               if (this.vehicles[i] instanceof Truck) {
+                // find a vehicle to tow
                 this.findVehicleToTow(this.vehicles[i] as Truck);
                 return;
+              } else {
+                // not a truck so display message
+                console.log("This action is only available for trucks");
               }
             }
           }
-          // not a truck so display message
-          console.log("This action is only available for trucks");
         } else if (answers.action === "Wheelie") {
-          if (
-            this.vehicles.find(
-              (vehicle) => vehicle.vin === this.selectedVehicleVin
-            ) instanceof Motorbike
-          ) {
-            for (let i = 0; i < this.vehicles.length; i++) {
-              if (this.vehicles[i].vin === this.selectedVehicleVin) {
+          for (let i = 0; i < this.vehicles.length; i++) {
+            if (this.vehicles[i].vin === this.selectedVehicleVin) {
+              if (this.vehicles[i] instanceof Motorbike) {
+                // perform a wheelie on the motorbike
                 (this.vehicles[i] as Motorbike).wheelie();
+              } else {
+                // not a motorbike so display message
+                console.log("This action is only available for motorbikes");
               }
             }
-          } else {
-            // not a motorbike so display message 
-            console.log("This action is only available for motorbikes");
           }
         } else if (answers.action === "Select or create another vehicle") {
           // start the cli to return to the initial prompt if the user wants to select or create another vehicle
